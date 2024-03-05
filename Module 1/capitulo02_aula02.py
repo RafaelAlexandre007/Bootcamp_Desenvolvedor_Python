@@ -31,3 +31,19 @@ print(area)
 print(nome_completo)
 print(media)
  
+# Erros lógicos
+x = 5.0
+y = 7.0
+z = 12.0
+media = x + y + z /3
+print(media)  
+
+# Erro de Sintaxe
+x = 3
+y = 5
+#print x + y
+# -- correto --
+print(x + y) 
+
+#Erros em tempo de execução
+
