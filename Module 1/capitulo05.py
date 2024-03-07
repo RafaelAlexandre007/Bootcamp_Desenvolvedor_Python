@@ -1,3 +1,4 @@
+# Para Google colab
 # Estrutura de Dados
 # -> list - Ordenada e mutável
 [1, 2, 3, 4]
@@ -63,7 +64,7 @@ print(l2)
 # Métodos que retornam valores e não alteram a lista
 print(l1.index(40)) # index: retorna o índice da primeira ocorrência do elemento print(l1.count(10)) # count: conta as ocorrências do elemento
 l2 = [2, 'a', 5.44, True] 
-print(max(l2))
+#Erro print(max(l2))
 idades = [27, 49, 12, 67, 21, 32, 18, 45, 84, 53, 22, 56, 80, 35, 18] 
 print('Maior idade:', max(idades))
 
@@ -101,7 +102,82 @@ print(t1.index(20)) # index: retorna o índice da primeira ocorrência do elemen
 print(t2.count('a')) # count: conta as ocorrências do elemento
 
 t1 = (1, 2, 3) 
-t1[0] = 4
+#Erro t1[0] = 4
 
 # -> set - Não ordenada, mutavel e valores unicos
+c1 ={3, 0, 1, 2, 4, 3, 3, 3, 3}
+print(c1)
+
+    ## OperaçAo com conjuntos
+c2 = { 2, "a", 5.44, True}
+print(c2)
+
+
+# Criação dos conjuntos A e B
+A = {1, 2, 3, 4, 5} 
+B = {4, 5, 6, 7, 8} 
+print('A:', A) 
+print('B:', B)
+# Operação de União: (A ∪ B) 
+print('A | B =>', A | B) 
+print('A.union(B) =>', A.union(B))
+# Operação de Interseção: (A ∩ B)
+print('A & B =>', A & B) 
+print('A.intersection(B) =>', A.intersection(B))
+# Operação de Diferença: (A - B) e (B - A)
+print('A - B =>', A - B) 
+print('A.difference(B) =>', A.difference(B)) 
+print('B - A =>', B - A) 
+print('B.difference(A) =>', B.difference(A))                
+
+#Criação dos conjuntos A e B
+c1 = {1, 2, 3, 4, 5} 
+c2 = {4, 5}
+c3 = {91, 92, 93}
+# Adiciona um elemento ao conjunto
+c1.add(6) 
+print(c1)
+# Adiciona os elementos de uma sequência iterável
+c1.update([2, 4, 6, 8]) 
+print(c1)
+# Descarta um elemento do conjunto,
+c1.discard(8)
+print(c1)
+# Diferentemente do set.remove(), o discard não gera um erro # se o elmento a ser removido não existir
+c1.discard(99)
+print(c1)
+# Verifica se os conjuntos são disjuntos, ou seja, # se não possuem nenhum elemento em comum 
+print(c1.isdisjoint(c2))
+print(c1.isdisjoint(c3))
+# Verifica se o conjunto é subconjunto de outro
+print(c1.issubset(c2)) 
+print(c2.issubset(c1))
+# Verifica se o conjunto contém outro conjunto (superset)
+print(c1.issuperset(c2)) 
+print(c2.issuperset(c1))
+
+# Criação das listas de alunos das turmas
+ING = ['Gabriel', 'Caio', 'Maria', 'Ana', 'Juliano', 'Flávia', 'Rubens', 'Bruna'] 
+ESP = ['Caio', 'Artur', 'Beatriz', 'Carolina', 'Maria', 'Juliano', 'Bruna', 'Rui'] 
+FRA = ['Pedro', 'Bruna', 'Paula', 'Tiago', 'Maria', 'Flávia', 'Rui', 'Carolina']
+# Concatenação de todas as listas de alunos
+ALL = ING | ESP | FRA
+
+# Exibição do resultado
+print('Relação de todos os alunos da escola:') 
+print(ALL)
+
+# 1 – Interseção entre os pares de turmas: (ING & ESP), (ING & FRA) e (ESP & FRA) 
+# 2 – Calcula a união das interseções
+ALUNOS_DESCONTO = (ING & ESP) | (ING & FRA) | (ESP & FRA)
+# Exibição do resultado
+print('Relação de dos alunos com desconto:') 
+print(ALUNOS_DESCONTO)
+
+# 1 – Interseção entre os pares de turmas: (ING & ESP), (ING & FRA) e (ESP & FRA) 
+# 2 – Calcula a união das interseções
+ALUNOS_DESCONTO = (ING & ESP) | (ING & FRA) | (ESP & FRA)
+# Exibição do resultado
+print('Relação de dos alunos com desconto:') 
+print(ALUNOS_DESCONTO)
 # -> dict - Mapeamento chave e valor, não ordenado e mutavel
