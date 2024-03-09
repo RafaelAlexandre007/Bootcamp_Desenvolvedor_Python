@@ -29,3 +29,5 @@ print('Inteiro aleatório entre 50 e 100:', random.randint(50, 100))
 import os
 #os.mkdir('pasta') # cria um diretório chamado pasta
 #print('Caminho completo:', os.path.join('/', 'pasta', 'arquivo.txt'))
+
+#https://packaging.python.org/en/latest/tutorials/packaging-projects/
