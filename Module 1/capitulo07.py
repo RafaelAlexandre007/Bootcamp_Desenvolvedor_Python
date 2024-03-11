@@ -30,4 +30,7 @@ import os
 #os.mkdir('pasta') # cria um diretório chamado pasta
 #print('Caminho completo:', os.path.join('/', 'pasta', 'arquivo.txt'))
 
-#https://packaging.python.org/en/latest/tutorials/packaging-projects/
+# https://packaging.python.org/en/latest/tutorials/packaging-projects/
+# Repositório oficial de pacotes Python: https://pypi.org/
+# Página oficial do pacote pandas: https://pandas.pydata.org/
+# Tutorial de instalação pip: https://pip.pypa.io/en/stable/installation/
